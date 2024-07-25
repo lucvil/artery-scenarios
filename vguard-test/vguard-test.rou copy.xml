@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-05 15:17:24 by Eclipse SUMO netedit Version 1.19.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <vType id="CAR" accel="2.6" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="55.55" speed="5"/>
+
+    <!-- Routes -->
+    <route id="r_0" edges="n1_n2 n2_n3"/>
+    <route id="r_1" edges="n3_n2 n2_n1"/>
+    <route id="r_2" edges="J1_J2"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <vehicle id="s_1" depart="0.00" route="r_2">
+        <stop lane="J1_J2_0" duration="250.00" friendlyPos="1"/>
+    </vehicle>
+    <vehicle id="v_l_1" depart="0.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_1" depart="0.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_2" depart="5.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_2" depart="5.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_3" depart="10.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_3" depart="10.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_4" depart="15.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_4" depart="15.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_5" depart="20.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_5" depart="20.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_6" depart="25.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_6" depart="25.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_7" depart="30.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_7" depart="30.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_8" depart="35.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_8" depart="35.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_9" depart="40.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_9" depart="40.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_10" depart="45.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_10" depart="45.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_11" depart="50.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_11" depart="50.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_12" depart="55.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_12" depart="55.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_13" depart="60.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_13" depart="60.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_14" depart="65.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_14" depart="65.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_15" depart="70.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_15" depart="70.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_16" depart="75.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_16" depart="75.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_17" depart="80.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_17" depart="80.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_18" depart="85.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_18" depart="85.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_19" depart="90.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_19" depart="90.00" route="r_1" vType="CAR"/>
+    <vehicle id="v_l_20" depart="95.00" route="r_0" vType="CAR"/>
+    <vehicle id="v_r_20" depart="95.00" route="r_1" vType="CAR"/>
+</routes>
+
+
+<!-- 10 km/h -> 2.778 m/s
+20 km/h -> 5.556 m/s
+30 km/h -> 8.333 m/s
+40 km/h -> 11.111 m/s
+50 km/h -> 13.889 m/s
+60 km/h -> 16.667 m/s
+70 km/h -> 19.444 m/s
+80 km/h -> 22.222 m/s
+90 km/h -> 25.0 m/s
+100 km/h -> 27.778 m/s -->

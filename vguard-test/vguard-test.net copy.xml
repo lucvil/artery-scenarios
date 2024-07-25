@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-05 13:00:43 by Eclipse SUMO netedit Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="/home/lucvil/artery/scenarios/vguard-test/vguard-test.sumocfg"/>
+        <additional-files value=""/>
+        <route-files value="/home/lucvil/artery/scenarios/vguard-test/vguard-test.rou.xml"/>
+        <sumo-net-file value="/home/lucvil/artery/scenarios/vguard-test/vguard-test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/lucvil/artery/scenarios/vguard-test/vguard-test.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-400.00,100.00,400.00,110.00" origBoundary="0.000000,0.000000,400.000000,400.000000" projParameter="+proj=utm +zone=22 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id=":2_0" function="internal">
+        <lane id=":2_0_0" index="0" speed="13.89" length="0.14" shape="0.10,98.50 0.00,98.40"/>
+    </edge>
+
+    <edge id="1to2" from="1" to="2" priority="-1" shape="-400.00,100.00 0.10,100.10">
+        <lane id="1to2_0" index="0" speed="13.89" length="0.10" shape="-0.00,98.50 0.10,98.50"/>
+    </edge>
+    <edge id="E0" from="J0" to="J1" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="5.00" shape="-1.60,110.00 -1.60,105.00"/>
+    </edge>
+    <edge id="out" from="2" to="3" priority="-1">
+        <lane id="out_0" index="0" speed="13.89" length="400.00" shape="0.00,98.40 400.00,98.40"/>
+    </edge>
+
+    <junction id="1" type="dead_end" x="-400.00" y="100.00" incLanes="" intLanes="" shape="0.00,100.00 0.00,96.80" customShape="1"/>
+    <junction id="2" type="priority" x="0.00" y="100.00" incLanes="1to2_0" intLanes=":2_0_0" shape="0.05,100.00 0.05,96.80 0.05,100.10">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="3" type="dead_end" x="400.00" y="100.00" incLanes="out_0" intLanes="" shape="400.00,96.80 400.00,100.00"/>
+    <junction id="J0" type="dead_end" x="0.00" y="110.00" incLanes="" intLanes="" shape="-0.00,110.00 -3.20,110.00"/>
+    <junction id="J1" type="dead_end" x="0.00" y="105.00" incLanes="E0_0" intLanes="" shape="-3.20,105.00 -0.00,105.00"/>
+
+    <connection from="1to2" to="out" fromLane="0" toLane="0" via=":2_0_0" dir="s" state="M"/>
+
+    <connection from=":2_0" to="out" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>

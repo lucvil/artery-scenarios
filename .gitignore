@@ -1,0 +1,7 @@
+.cmdenv-log
+.qtenvrc
+sumo-*.log
+
+*elog*
+*#0*
+*.json

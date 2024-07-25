@@ -1,0 +1,1 @@
+add_opp_run(vguard-test CONFIG omnetpp.ini) 
