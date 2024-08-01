@@ -3,6 +3,7 @@ add_subdirectory(gemv2)
 add_subdirectory(highway-police)
 add_subdirectory(helloworld)
 add_subdirectory(vguard-test)
+add_subdirectory(loop-street)
 
 if(WITH_ENVMOD)
     add_subdirectory(rsu_grid)

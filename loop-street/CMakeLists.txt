@@ -1,0 +1,1 @@
+add_opp_run(loop-street CONFIG omnetpp.ini) 

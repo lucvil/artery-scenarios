@@ -1,30 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-07-01 13:28:44 by Eclipse SUMO netedit Version 1.20.0
+<!-- generated on 2024-07-26 15:34:40 by Eclipse SUMO netedit Version 1.20.0
 -->
-
-<!-- 10 km/h -> 2.778 m/s
-20 km/h -> 5.556 m/s
-30 km/h -> 8.333 m/s
-40 km/h -> 11.111 m/s
-50 km/h -> 13.889 m/s
-60 km/h -> 16.667 m/s
-70 km/h -> 19.444 m/s
-80 km/h -> 22.222 m/s
-90 km/h -> 25.0 m/s
-100 km/h -> 27.778 m/s -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <!-- VTypes -->
-    <vType id="Car" length="5.00" minGap="2.50" maxSpeed="19.444" accel="2.6" decel="4.5" sigma="0.5"/>
+    <vType id="Car" length="5.00" minGap="2.50" maxSpeed="22.22" accel="2.6" decel="4.5" sigma="0.5"/>
     <!-- Routes -->
-    <route id="r_0" edges="n1_n2 n2_n3"/>
-    <route id="r_1" edges="n3_n2 n2_n1"/>
-    <route id="r_2" edges="J1_J2"/>
+    <route id="r_0" edges="E1 E2 E3 E0"/>
+    <route id="r_1" edges="-E0 -E3 -E2 -E1"/>
+    <route id="r_2" edges="E7 E8 E9 E10 E7"/>
     <!-- Vehicles, persons and containers (sorted by depart) -->
-    <vehicle id="s_1" depart="0.00" route="r_2">
-        <stop lane="J1_J2_0" startPos="0.00" endPos="0.00" duration="1000.00" friendlyPos="1"/>
-    </vehicle>
     <vehicle id="v_l_1" type="Car" depart="0.00" route="r_0"/>
     <vehicle id="v_r_1" type="Car" depart="0.00" route="r_1"/>
     <vehicle id="v_l_2" type="Car" depart="5.00" route="r_0"/>
@@ -37,6 +23,7 @@
     <vehicle id="v_r_5" type="Car" depart="20.00" route="r_1"/>
     <vehicle id="v_l_6" type="Car" depart="25.00" route="r_0"/>
     <vehicle id="v_r_6" type="Car" depart="25.00" route="r_1"/>
+    <vehicle id="s_1" type="Car" depart="30.00" route="r_2"/>
     <vehicle id="v_l_7" type="Car" depart="30.00" route="r_0"/>
     <vehicle id="v_r_7" type="Car" depart="30.00" route="r_1"/>
     <vehicle id="v_l_8" type="Car" depart="35.00" route="r_0"/>
