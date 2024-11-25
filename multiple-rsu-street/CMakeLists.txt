@@ -1,0 +1,1 @@
+add_opp_run(multiple-rsu-street CONFIG omnetpp.ini) 

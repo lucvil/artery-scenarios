@@ -4,6 +4,8 @@ add_subdirectory(highway-police)
 add_subdirectory(helloworld)
 add_subdirectory(vguard-test)
 add_subdirectory(loop-street)
+add_subdirectory(multiple-rsu-street)
+add_subdirectory(multiple-rsu-street-congestion)
 
 if(WITH_ENVMOD)
     add_subdirectory(rsu_grid)
