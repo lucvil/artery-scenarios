@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-01-06 18:44:28 by Eclipse SUMO netedit Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="/home/lucvil/artery/scenarios/multiple-rsu-single-street-congestion/multiple-rsu-single-street-congestion.sumocfg"/>
+        <additional-files value=""/>
+        <route-files value="/home/lucvil/artery/scenarios/multiple-rsu-single-street-congestion/multiple-rsu-single-street-congestion.rou.xml"/>
+        <sumo-net-file value="/home/lucvil/artery/scenarios/multiple-rsu-single-street-congestion/multiple-rsu-single-street-congestion.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/lucvil/artery/scenarios/multiple-rsu-single-street-congestion/multiple-rsu-single-street-congestion.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,1800.00,10.00" origBoundary="-10000000000.000000,-10000000000.000000,10000000000.000000,10000000000.000000" projParameter="+proj=utm +zone=22 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <edge id="E1" from="J2" to="J3" priority="-1">
+        <lane id="E1_0" index="0" speed="30.00" length="5.00" shape="398.40,10.00 398.40,5.00"/>
+    </edge>
+    <edge id="E2" from="J4" to="J5" priority="-1">
+        <lane id="E2_0" index="0" speed="30.00" length="5.00" shape="898.40,10.00 898.40,5.00"/>
+    </edge>
+    <edge id="E3" from="J6" to="J7" priority="-1">
+        <lane id="E3_0" index="0" speed="30.00" length="5.00" shape="1398.40,10.00 1398.40,5.00"/>
+    </edge>
+    <edge id="E4" from="J9" to="J10" priority="-1">
+        <lane id="E4_0" index="0" speed="30.00" length="1800.00" shape="0.00,-1.60 1800.00,-1.60"/>
+    </edge>
+
+    <junction id="J10" type="dead_end" x="1800.00" y="0.00" incLanes="E4_0" intLanes="" shape="1800.00,-3.20 1800.00,0.00"/>
+    <junction id="J2" type="dead_end" x="400.00" y="10.00" incLanes="" intLanes="" shape="400.00,10.00 396.80,10.00"/>
+    <junction id="J3" type="dead_end" x="400.00" y="5.00" incLanes="E1_0" intLanes="" shape="396.80,5.00 400.00,5.00"/>
+    <junction id="J4" type="dead_end" x="900.00" y="10.00" incLanes="" intLanes="" shape="900.00,10.00 896.80,10.00"/>
+    <junction id="J5" type="dead_end" x="900.00" y="5.00" incLanes="E2_0" intLanes="" shape="896.80,5.00 900.00,5.00"/>
+    <junction id="J6" type="dead_end" x="1400.00" y="10.00" incLanes="" intLanes="" shape="1400.00,10.00 1396.80,10.00"/>
+    <junction id="J7" type="dead_end" x="1400.00" y="5.00" incLanes="E3_0" intLanes="" shape="1396.80,5.00 1400.00,5.00"/>
+    <junction id="J9" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-3.20"/>
+
+</net>
